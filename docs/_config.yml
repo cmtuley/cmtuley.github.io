@@ -23,12 +23,35 @@ email: cmtuley99@me.com
 domain: cmtuley.github.io
 url: https://cmtuley.github.io
 baseurl: /docs
+paginate_path: "docs/page:num/"
+permalink: blog/:title/
 github_username:  cmtuley
 
 # Build settings
-theme: minima
+remote_theme: long-haul
 plugins:
   - jekyll-feed
+
+sass:
+    style: compressed
+
+markdown: kramdown
+highlighter: rouge
+plugins: [jekyll-paginate]
+paginate: 5
+
+navigation:
+    - title: Home
+      url: /index.html
+    - title: About
+      url: /about
+    - title: Contact
+      url: /contact
+
+social:
+    github: brianmaierjr
+    twitter: thoughtsofone
+    email: cmtuley99@me.com
 
 # Exclude from processing.
 # The following items will not be processed, by default.
